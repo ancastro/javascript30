@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background-color: #F4F4F7;
+  background-color: #20263D;
   background-size: cover;
 }
 body,html {
@@ -18,23 +18,25 @@ body,html {
 }
 
 .key {
-  border: .4rem solid black;
+  border: .4rem solid #99a7e0;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
-  padding: 1rem .5rem;
-  transition: all .07s ease;
+  padding: 20rem .5rem 2rem .5rem;
+  transition: all .30s ease;
   width: 10rem;
   text-align: center;
-  color: white;
-  background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+  color: #8795AB;
+  background: #2A314C;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  background-color: #FC486B;
+  color: #FFFFFF;
+  box-shadow: 0 0 1rem #fb7891;
+  border: .4rem solid #f9a5b5;
+  /*margin: 0 3rem; for cool shifting effect*/
 }
 
 kbd {
