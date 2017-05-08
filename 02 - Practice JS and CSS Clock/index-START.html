@@ -12,14 +12,14 @@
         <div class="hand hour-hand"></div>
         <div class="hand min-hand"></div>
         <div class="hand second-hand"></div>
+        <div class="center-circle"></div>
       </div>
     </div>
 
 
   <style>
     html {
-      background:#018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
-      background-size:cover;
+      background-color: #F0EEED;
       font-family:'helvetica neue';
       text-align: center;
       font-size: 10px;
@@ -42,11 +42,9 @@
       margin:50px auto;
       position: relative;
       padding:2rem;
-      box-shadow:
-        0 0 0 4px rgba(0,0,0,0.1),
-        inset 0 0 0 3px #EFEFEF,
-        inset 0 0 10px black,
-        0 0 10px rgba(0,0,0,0.2);
+      box-shadow: inset 0px 6px 19px 0px rgba(0,0,0,0.19),
+      10px 16px 37px 0px rgba(0,0,0,0.30);
+      background-color: #efeae3;
     }
 
     .clock-face {
@@ -56,16 +54,46 @@
       transform: translateY(-3px); /* account for the height of the clock hands */
     }
 
+    .center-circle {
+      height: 8%;
+      width: 8%;
+      border-radius: 50%;
+      background: #6B5F53;
+      position: absolute;
+      top: 48%;
+      left: 46%;
+      box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.65);
+    }
+
     .hand {
       width:50%;
-      height:6px;
-      background:black;
+      height:10px;
+      background: #6B5F53;
       position: absolute;
       top:50%;
       transform-origin: 100%;
       transform: rotate(90deg);
       transition: all 0.05s;
       transition-timing-function: cubic-bezier(0, 2.71, 0.58, 1);
+      box-shadow: 0px 0px 2.5px 0px rgba(0,0,0,0.65)
+    }
+
+    .hour-hand {
+      width: 30%;
+      height: 3%;
+      left: 20%;
+    }
+
+    .min-hand {
+      width: 40%;
+      height: 3%;
+      left: 10%;
+    }
+
+    .second-hand {
+      width: 45%;
+      height: 2%;
+      left: 5%;
     }
 
   </style>
